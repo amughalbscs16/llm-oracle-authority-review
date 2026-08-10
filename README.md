@@ -19,12 +19,13 @@ citation-searching (snowballing) round over the 54 included studies added
 - `PRISMA-Flow-Diagram.pdf`: the records-flow diagram (identification to inclusion).
 - `protocol/Review-Protocol.pdf`: the locked inclusion and exclusion criteria and the 35-field extraction codebook (the legend for the coded data).
 - `search/Search-Strategy.pdf`: the frozen search query, per-database renderings, run ledger, and screening log.
+- `Stage-1-Screening-Prompt.pdf`: the exact Stage-1 pre-filter screening prompt (model, decoding settings, run date, and the pre-registered inclusion/exclusion criteria).
 - `data/Review-Data.xlsx`: one workbook with a sheet per table:
   - `Search-Scopus`, `Search-IEEE`, `Search-ACM`: per-database results, metadata only (391 / 234 / 1,811 records).
   - `Screening-Funnel`: all 2,245 de-duplicated records with screening decision and reason (the PRISMA flow).
   - `Decisions-Ali`, `Decisions-Bilal`, `Decisions-Consensus`: the independent dual-screening record.
-  - `Coding-Sheet`: per-study coding for the 115 full-text-assessed records (coded fields plus citation metadata).
-  - `Coding-Sheet-Included`: the 83 included studies (54 database + 29 citation-searching), same coded fields; the `Snowball Gather` column flags the 29 added by snowballing.
+  - `Coding-Sheet`: per-study coding for the 115 full-text-assessed records: the coded taxonomy fields, an anchoring quotation (`key_quote`) per study, and citation metadata.
+  - `Coding-Sheet-Included`: the 83 included studies (54 database + 29 citation-searching), the same coded fields including anchoring quotations; the `Snowball Gather` column flags the 29 added by snowballing.
 
 Publisher PDFs, raw database exports, and record abstracts are not redistributed
 (copyright); the released per-database exports are metadata only.
