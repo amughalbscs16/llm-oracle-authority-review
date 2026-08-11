@@ -31,6 +31,25 @@ Note: applying the adjudication revised the database first pass in place, so its
 pre-adjudication source codes are not retained. `Coding-Adjudication` records the
 pass-1 eligibility decision explicitly and marks source accordingly.
 
+### Reproducing the concordance figures
+
+All three figures reported in the paper can be recomputed from this workbook.
+
+1. **Eligibility, database arm.** In `Coding-Adjudication`, count rows with
+   `arm = database` and `variable = eligibility`: **22**. The denominator is the
+   114 unique full-text records (115 assessed, 1 duplicate found at full text).
+   (114 - 22) / 114 = **80.7%**.
+2. **Primary source, database arm.** Count rows with `arm = database` and
+   `variable = source_primary`: **8**. For the denominator, count `decision =
+   include` in `Database-Coding-Pass2` (**50**), then subtract the eligibility
+   rows whose `pass2 = include` and `pass1 = exclude` (**2**: records 0304 and
+   0873), leaving the **48** records both passes judged includable.
+   (48 - 8) / 48 = **83.3%**.
+3. **Primary source, citation-searching arm.** Compare `source_primary` between
+   `Snowball-Coding-Pass1` and `Snowball-Coding-Final` across the 29 rows that
+   carry an `id`: **4** differ (2256, 2270, 2271, 2272).
+   (29 - 4) / 29 = **86.2%**.
+
 ## Contents
 
 - `PRISMA-2020-Checklist.pdf`: the completed 27-item PRISMA 2020 checklist with the location of each item.
