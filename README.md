@@ -13,6 +13,24 @@ dual human screening reached Cohen's kappa = 0.79. A backward and forward
 citation-searching (snowballing) round over the 54 included studies added
 **29 more, for 83 included in total**.
 
+## Coding
+
+Every full-text record was coded twice. In the database arm the 115 records were
+coded against the locked codebook and then re-assessed in a second pass covering
+the two variables the review's conclusions rest on, eligibility and the primary
+source of authority, each with its own supporting quotation. In the
+citation-searching arm the 32 records coded were taken through two full passes
+over all fields. Concordance between the passes was **80.7%** on eligibility
+(22 differences over the 114 unique full-text records) and **83.3%** on primary
+source (8 differences over the 48 records both passes judged includable) in the
+database arm, and **86.2%** on primary source (4 differences over 29) in the
+citation-searching arm. Every difference was adjudicated against the
+pre-registered boundary rules and is listed in `Coding-Adjudication`.
+
+Note: applying the adjudication revised the database first pass in place, so its
+pre-adjudication source codes are not retained. `Coding-Adjudication` records the
+pass-1 eligibility decision explicitly and marks source accordingly.
+
 ## Contents
 
 - `PRISMA-2020-Checklist.pdf`: the completed 27-item PRISMA 2020 checklist with the location of each item.
@@ -24,7 +42,10 @@ citation-searching (snowballing) round over the 54 included studies added
   - `Search-Scopus`, `Search-IEEE`, `Search-ACM`: per-database results, metadata only (391 / 234 / 1,811 records).
   - `Screening-Funnel`: all 2,245 de-duplicated records with screening decision and reason (the PRISMA flow).
   - `Decisions-Ali`, `Decisions-Bilal`, `Decisions-Consensus`: the independent dual-screening record.
-  - `Coding-Sheet`: per-study coding for the 115 full-text-assessed records: the coded taxonomy fields, an anchoring quotation (`key_quote`) per study, and citation metadata.
+  - `Database-Coding-Final`: final per-study coding for the 115 full-text-assessed records of the database arm, after adjudication: the coded taxonomy fields, an anchoring quotation (`key_quote`) per study, and citation metadata.
+  - `Database-Coding-Pass2`: the second coding pass over the same 115 records, covering eligibility and primary source of authority, each with its own evidence quotation and a confidence rating.
+  - `Snowball-Coding-Pass1`, `Snowball-Coding-Final`: the two coding passes over the 32 records coded in the citation-searching arm; the final pass excluded 3, leaving the 29 that appear in the paper.
+  - `Coding-Adjudication`: every difference between the two coding passes (34 in total), with the adjudicated outcome and which pass it followed.
   - `Coding-Sheet-Included`: the 83 included studies (54 database + 29 citation-searching), the same coded fields including anchoring quotations; the `Snowball Gather` column flags the 29 added by snowballing.
 
 Publisher PDFs, raw database exports, and record abstracts are not redistributed
